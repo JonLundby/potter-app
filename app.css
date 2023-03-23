@@ -45,10 +45,30 @@ a {
 }
 
 img {
-    width: 100%;
+    width: 15%;
     height: auto;
 }
+/* ---------- table styling ---------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
 
+thead{
+    background-color: rgb(38, 76, 89);
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+#characters tr:hover{
+    background-color: silver;
+}
+/* ---------- dialog/modal styling ---------- */
+#dialog-img{
+    width: 70%;
+}
 /* ---------- header styling ---------- */
 header {
     background-color: var(--green);

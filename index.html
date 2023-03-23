@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
-    <link rel="shortcut icon" href="https://cederdorff.github.io/img/favicon.webp" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="shortcut icon" href="https://cederdorff.github.io/img/favicon.webp" type="image/x-icon" />
     <title>Harry Potter Characters</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Harry Potter Characters</h1>
+      <h1>Harry Potter Characters</h1>
     </header>
     <main>
-        <section id="characters" class="grid-container">
-            <article><img src="http://hp-api.herokuapp.com/images/harry.jpg">
+      <table id="characters">
+        
+      </table>
+
+      <dialog id="dialog-character">
+        <h3 id="dialog-name">Name:</h3>
+        <img id="dialog-img" src="http://hp-api.herokuapp.com/images/harry.jpg" alt="">
+        <p id="dialog-species">species:</p>
+        <p id="dialog-gender">Gender:</p>
+        <p id="dialog-house">House:</p>
+        <p id="dialog-birthdate">Date of birth:</p>
+        <p id="dialog-birthyear">Year of birth</p>
+        <p id="dialog-ancestry">Ancestry:</p>
+        <p id="dialog-eyecolor">Eye color:</p>
+        <button id="dialog-close">Close?</button>
+      </dialog>
+      <!-- <section id="characters" class="grid-container"> -->
+      <!-- <article><img src="http://hp-api.herokuapp.com/images/harry.jpg">
                 <h2>Harry Potter</h2>
                 <p>Gryffindor</p>
                 <p>Date of Birth: 31-07-1980</p>
                 <p>Played by Daniel Radcliffe</p>
-            </article>
-        </section>
+            </article> -->
+      <!-- </section> -->
     </main>
 
     <footer>
-        <p>Potter App by RACE</p>
+      <p>Potter App by RACE</p>
     </footer>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
