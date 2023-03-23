@@ -65,6 +65,7 @@ async function initApp() {
   // };
 
   const harry = await getCharacter("https://raw.githubusercontent.com/cederdorff/dat-js/main/data/harry.json");
+  console.log(harry);
   showCharacter(harry);
 
   const ron = await getCharacter("https://raw.githubusercontent.com/cederdorff/dat-js/main/data/ron.json");
