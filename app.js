@@ -64,7 +64,7 @@ async function initApp() {
   //   image: "http://hp-api.herokuapp.com/images/ron.jpg",
   // };
 
-  const harry = await getCharacter("https://raw.githubusercontent.com/cederdorff/dat-js/main/data/harry.json")
+  const harry = await getCharacter("https://raw.githubusercontent.com/cederdorff/dat-js/main/data/harry.json");
   showCharacter(harry);
 
   const ron = await getCharacter("https://raw.githubusercontent.com/cederdorff/dat-js/main/data/ron.json");
@@ -78,7 +78,6 @@ async function initApp() {
 
   const snape = await getCharacter("https://raw.githubusercontent.com/cederdorff/dat-js/main/data/severus.json");
   showCharacter(snape);
-
 
   const profilesTableHeadHTML = /*html*/ `
   <thead>
@@ -116,9 +115,9 @@ function showCharacter(character) {
       <tr>
         <td>${character.name}</td>
         <td><img src="${character.image}"></td>
-          <td>${character.house}</td>
-          <td>${character.dateOfBirth}</td>
-          <td>${character.actor}</td>
+        <td>${character.house}</td>
+        <td>${character.dateOfBirth}</td>
+        <td>${character.actor}</td>
       </tr>
   </tbody>
     `;
